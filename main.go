@@ -8,14 +8,6 @@ import (
 	"strings"
 )
 
-/*
-	how do we find the best move?
-
-		first move, guess audio
-		any move after, eliminate impossible words, and pick a random valid, choice (if I cared enough, I would choose
-																				     the word with common characters)
-*/
-
 func getWords(dir string) []string {
 	body, err := os.ReadFile(dir)
 	if err != nil {
